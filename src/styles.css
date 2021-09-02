@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+.container {
+  width: 800px;
+  border: 1px solid;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+.reminder {
+  border-left: 8px solid green;
+}
+
+label {
+  margin-right: 20px;
+}
+
+.form {
+  margin-bottom: 40px;
+}
+
+.form-control {
+  margin: 20px 0px;
+  border: none;
+}
+
+.form-control-check {
+  display: flex;
+  align-items: center;
+}
+
+.form-control-check input {
+  width: 20px;
+}
+
+.form-control-check label {
+  margin-bottom: 0px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+}
+
+.btn {
+  background-color: #000;
+  color: #ffffff;
+}

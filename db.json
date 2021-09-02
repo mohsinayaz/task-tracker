@@ -1,0 +1,28 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Doctors Appointment",
+      "date": "May 5, 2021",
+      "reminder": true
+    },
+    {
+      "id": 2,
+      "text": "Meeting At School E-complex",
+      "date": "April 4, 2021",
+      "reminder": false
+    },
+    {
+      "id": 3,
+      "text": "Food Shopping",
+      "day": "June 8, 2021",
+      "reminder": false
+    },
+    {
+      "text": "mohsin",
+      "day": "may 15",
+      "reminder": true,
+      "id": 4
+    }
+  ]
+}

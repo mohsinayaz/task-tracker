@@ -3,4 +3,11 @@
   color: white;
   cursor: pointer;
   margin-right: 19px;
+  border: none;
+}
+.add-tracker:hover{
+  background-color: #5cbd5c;
+}
+.close-tracker:hover{
+  background-color: red;
 }

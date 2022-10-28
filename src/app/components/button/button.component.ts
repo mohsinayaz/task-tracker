@@ -1,4 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { UiService } from 'src/app/services/ui.service';
 
 @Component({
   selector: 'app-button',
@@ -6,14 +8,26 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   styleUrls: ['./button.component.css'],
 })
 export class ButtonComponent implements OnInit {
-  @Input() color: string;
   @Input() text: string;
   @Output() btnClick = new EventEmitter();
-  constructor() {}
+  color: any;
+  constructor(private uiService: UiService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 
   onClick() {
     this.btnClick.emit();
+  }
+  onMouseOver(): void {
+    const addbtn = this.uiService.showTask;
+    if(addbtn){
+      this.color = "red"
+    }else {
+      this.color = '#5cbd5c'
+    }
+  }
+  onMouseOut():void{
+    this.color = 'rgba(0, 0, 0, 0.5)';
   }
 }

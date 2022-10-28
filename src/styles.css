@@ -1,7 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+  background: url(./assets/background.jpg);
+}
 .container {
   width: 800px;
-  border: 1px solid;
   padding: 20px;
   margin-top: 60px;
 }
@@ -21,6 +23,7 @@ label {
 .form-control {
   margin: 20px 0px;
   border: none;
+  background-color: unset;
 }
 
 .form-control-check {
@@ -42,6 +45,6 @@ input {
 }
 
 .btn {
-  background-color: #000;
+ background-color: rgba(0, 0, 0, 0.5);
   color: #ffffff;
 }

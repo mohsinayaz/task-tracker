@@ -1,14 +1,13 @@
 .task {
-  background-color: rgb(236, 234, 234);
+  background-color: #000000a3;
+  color:white;
   margin: 20px;
   padding: 20px;
 }
-
 .task h3 {
   display: flex;
   justify-content: space-between;
 }
-
 fa-icon {
   cursor: pointer;
 }

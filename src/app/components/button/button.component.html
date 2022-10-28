@@ -1,6 +1,6 @@
 <button
   class="btn"
-  [ngStyle]="{ 'background-color': color }"
+  [ngClass]="text == 'Add' ? 'add-tracker' : 'close-tracker'"
   (click)="onClick()"
 >
   {{ text }}

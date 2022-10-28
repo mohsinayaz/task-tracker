@@ -1,0 +1,9 @@
+input{
+  border: none;
+  border-radius: 8px;
+}
+.btn-block{
+  width: 97% !important;
+  margin-left: 14px
+
+}

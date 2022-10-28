@@ -1,5 +1,6 @@
 .btn {
-  padding: 6px;
+  padding: 3px 24px;
   color: white;
   cursor: pointer;
+  margin-right: 19px;
 }

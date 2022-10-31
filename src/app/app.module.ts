@@ -13,6 +13,7 @@ import { AddTaskComponent } from './components/add-task/add-task.component';
 import { FormsModule } from '@angular/forms';
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { FooterComponent } from './components/footer/footer.component';
     AddTaskComponent,
     AboutComponent,
     FooterComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

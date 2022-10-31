@@ -1,3 +1,16 @@
 {
-  "tasks": []
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Doctors Appointment",
+      "date": "May 5, 2021",
+      "reminder": true
+    },
+    {
+      "text": "Cricket",
+      "day": "Monday",
+      "reminder": false,
+      "id": 2
+    }
+  ]
 }

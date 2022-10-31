@@ -38,4 +38,7 @@
   text-transform: capitalize;
   letter-spacing: 3px;
   color: white !important;
+  background-color: #00000080;
+  border-radius: 0.25rem;
+  display: inline;
 }

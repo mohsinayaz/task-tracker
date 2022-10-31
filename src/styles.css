@@ -16,6 +16,11 @@ body{
   opacity: 0.9;
 }
 
+.mat-snack-bar-container {
+  color: #ffffff;
+  background: #3c8429;
+}
+
 .reminder {
   border-left: 8px solid green;
 }

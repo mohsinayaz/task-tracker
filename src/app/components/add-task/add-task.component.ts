@@ -21,7 +21,7 @@ export class AddTaskComponent implements OnInit {
       .subscribe((value) => (this.showTask = value));
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   addTask() {
     if (!this.text) {

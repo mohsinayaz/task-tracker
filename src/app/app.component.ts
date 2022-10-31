@@ -8,7 +8,7 @@ import { UiService } from './services/ui.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  constructor(private router: Router, private uiService: UiService) {}
+  constructor(private router: Router, private uiService: UiService) { }
 
   hasRoute(url) {
     return this.uiService.routeIsHome(url);

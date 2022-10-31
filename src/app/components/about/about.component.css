@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #22b3b36e;
+  border-radius: 5px;
+}
+
+.container h2 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.container h3 {
+  color: cyan;
+  font-weight: 600;
+  font-family: cursive;
+}
+
+.container a {
+  color: #6c0606;
+  font-weight: bold;
+  text-decoration: none;
+}

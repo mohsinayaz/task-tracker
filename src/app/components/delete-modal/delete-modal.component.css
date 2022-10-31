@@ -1,0 +1,22 @@
+.dlt-btn, .cancel-btn {
+    margin: 0 5px;
+    border-radius: 6px;
+    width: 60px;
+    border: none;
+    height: 28px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.dlt-btn {
+    background-color: red;
+    color: #fff;
+}
+
+.dlt-btn:hover {
+    box-shadow: 1px 0 4px 0px red;
+}
+
+.cancel-btn:hover {
+    box-shadow: 1px 0 4px 0px #e2e1e1;
+}

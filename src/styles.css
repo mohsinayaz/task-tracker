@@ -12,6 +12,10 @@ body{
   margin-top: 60px;
 }
 
+.mat-dialog-container {
+  opacity: 0.9;
+}
+
 .reminder {
   border-left: 8px solid green;
 }

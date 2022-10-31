@@ -1,6 +1,7 @@
 import { TmplAstElement } from '@angular/compiler';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { MatSnackBar, MatSnackBarHorizontalPosition, MatSnackBarVerticalPosition } from '@angular/material/snack-bar';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { Task } from 'src/app/tasks.interface';
 import { DeleteModalComponent } from '../delete-modal/delete-modal.component';
@@ -15,7 +16,9 @@ export class TaskItemComponent implements OnInit {
   @Output() deletedTask = new EventEmitter();
   @Output() toggleReminder = new EventEmitter();
   faTimes = faTimes;
-  constructor(public dialog: MatDialog) {}
+  horizontalPosition: MatSnackBarHorizontalPosition = 'start';
+  verticalPosition: MatSnackBarVerticalPosition = 'bottom';
+  constructor(public dialog: MatDialog , private _snackBar: MatSnackBar) {}
 
   ngOnInit(): void {}
 
@@ -30,6 +33,10 @@ export class TaskItemComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => {
       if(result) {
         this.deletedTask.emit(task);
+        this._snackBar.open('Delete Successfully!!', 'Splash', {
+          horizontalPosition: this.horizontalPosition,
+          verticalPosition: this.verticalPosition,
+        });
       }
       console.log(`Dialog result: ${result}`);
     });

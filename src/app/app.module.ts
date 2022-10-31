@@ -13,7 +13,9 @@ import { AddTaskComponent } from './components/add-task/add-task.component';
 import { FormsModule } from '@angular/forms';
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
-
+import { MatDialogModule } from '@angular/material/dialog';
+import { DeleteModalComponent } from './components/delete-modal/delete-modal.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +26,7 @@ import { FooterComponent } from './components/footer/footer.component';
     AddTaskComponent,
     AboutComponent,
     FooterComponent,
+    DeleteModalComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +34,8 @@ import { FooterComponent } from './components/footer/footer.component';
     FontAwesomeModule,
     HttpClientModule,
     FormsModule,
+    MatDialogModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

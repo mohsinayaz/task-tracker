@@ -16,7 +16,6 @@ import { FooterComponent } from './components/footer/footer.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { DeleteModalComponent } from './components/delete-modal/delete-modal.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
@@ -29,9 +28,9 @@ import { ContactComponent } from './contact/contact.component';
     AddTaskComponent,
     AboutComponent,
     FooterComponent,
-    DeleteModalComponent
+    DeleteModalComponent,
+    ContactComponent
 
-    ContactComponent,
   ],
   imports: [
     BrowserModule,

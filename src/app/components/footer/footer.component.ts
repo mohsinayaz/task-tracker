@@ -7,9 +7,9 @@ import { UiService } from 'src/app/services/ui.service';
   styleUrls: ['./footer.component.css'],
 })
 export class FooterComponent implements OnInit {
-  constructor(private uiService: UiService) {}
+  constructor(private uiService: UiService) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   hasRoute(url) {
     return this.uiService.routeIsHome(url);
